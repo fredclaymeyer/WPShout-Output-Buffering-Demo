@@ -1,0 +1,11 @@
+/*
+Theme Name:     Output Buffer Demo
+Theme URI:      http://wpshout.com
+Description:    Twenty Seventeen child theme to show off output buffering
+Author:         WPShout
+Author URI:     http://wpshout.com/
+Template:       twentyseventeen
+Version:        1.0.0
+*/
+
+@import url("../twentyseventeen/style.css");
