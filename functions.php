@@ -13,13 +13,17 @@ function wpshout_quickview_post( $atts ) {
 	$post = $this_post;
 	setup_postdata( $post );
 
+	// Start output buffering so get_template_part doesn't output to the page
 	ob_start();
+		// Get template file output
 		get_template_part( 'custom-templates/post-quickview' );
+	// Save output and stop output buffering
 	$output = ob_get_clean();
 
 	// Return $post to its original state
 	wp_reset_postdata();
 
+	// Return buffered output to be output in shortcode location
 	return $output;
 }
 
@@ -48,9 +52,10 @@ function wpshout_add_single_post_footer( $content ) {
 	</div>
 
 	<?php
-	// Get the saved output as a string
+
+	// Get our output string and save to a variable
 	$footer = ob_get_clean();
 
-	// Return the content plus the saved output
+	// Return the string appended to the content
 	return $content . $footer;
 }
