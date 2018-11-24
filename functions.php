@@ -40,7 +40,7 @@ function wpshout_add_single_post_footer( $content ) {
 
 	<hr />
 	<div class="single-footer">
-		<h3>Footer section</h2>
+		<h3>Footer section</h3>
 		<p>I can do all kinds of HTML here</p>
 		<table>
 			<tr>
