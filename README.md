@@ -1,0 +1,1 @@
+Changed closing tag to h3 to match opening tag in functions.php
